@@ -1,24 +1,16 @@
-
 Pod::Spec.new do |s|
-  s.name         = "RNBiometricsDetection"
-  s.version      = "1.0.0"
-  s.summary      = "RNBiometricsDetection"
+  s.name         = 'RNBiometricsDetection'
+  s.version      = '1.0.0'
+  s.summary      = 'A React Native module for biometrics detection.'
   s.description  = <<-DESC
-                  RNBiometricsDetection
+                   A React Native module for biometrics detection.
                    DESC
-  s.homepage     = ""
-  s.license      = "MIT"
-  # s.license      = { :type => "MIT", :file => "FILE_LICENSE" }
-  s.author             = { "author" => "author@domain.cn" }
-  s.platform     = :ios, "7.0"
-  s.source       = { :git => "https://github.com/author/RNBiometricsDetection.git", :tag => "master" }
-  s.source_files  = "RNBiometricsDetection/**/*.{h,m}"
+  s.homepage     = 'https://github.com/mergograiqevci/react-native-biometrics-changed'
+  s.license      = { :type => 'MIT', :file => 'LICENSE' }
+  s.author       = { 'Your Name' => 'mergograiqevci@gmail.com' }
+  s.source       = { :git => 'https://github.com/mergograiqevci/react-native-biometrics-changed.git', :tag => s.version }
+  s.source_files  = 'ios/**/*.{h,m,swift}'
   s.requires_arc = true
-
-
-  s.dependency "React"
-  #s.dependency "others"
-
+  s.dependency 'React'
+  s.ios.deployment_target = '10.0'
 end
-
-  
