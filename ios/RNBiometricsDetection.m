@@ -1,12 +1,15 @@
-// RNBiometricsDetection.m
-#import <Foundation/Foundation.h>
-#import <React/RCTBridgeModule.h>
+#import "RNBiometricsDetection.h"
+#import <React/RCTLog.h>
 
-@interface RCT_EXTERN_MODULE(RNBiometricsDetection, NSObject)
+@implementation RNBiometricsDetection
 
-RCT_EXTERN_METHOD(
-  getFingerprintInfo: (RCTPromiseResolveBlock)resolve
-  rejecter: (RCTPromiseRejectBlock)reject
-)
+RCT_EXPORT_MODULE();
+
+RCT_EXPORT_METHOD(myNativeMethod:(NSString *)param resolver:(RCTPromiseResolveBlock)resolve rejecter:(RCTPromiseRejectBlock)reject)
+{
+  RCTLogInfo(@"Received param: %@", param);
+  // Your native code logic here
+  resolve(@(YES));
+}
 
 @end
