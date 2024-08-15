@@ -1,13 +1,15 @@
+//
+//  RNBiometricsDetection.m
+//  bezahlkarte
+//
+//  Created by Mergim Graiqevci on 12.8.24.
+//
 
-#import "RNBiometricsDetection.h"
-
-@implementation RNBiometricsDetection
-
-- (dispatch_queue_t)methodQueue
-{
-    return dispatch_get_main_queue();
-}
-RCT_EXPORT_MODULE()
-
+#import <Foundation/Foundation.h>
+#import "React/RCTBridgeModule.h"
+@interface RCT_EXTERN_MODULE(RNBiometricsDetection, NSObject)
+  RCT_EXTERN_METHOD(
+    getFingerprintInfo: (RCTPromiseResolveBlock) resolve
+    rejecter: (RCTPromiseRejectBlock) reject
+  )
 @end
-  
