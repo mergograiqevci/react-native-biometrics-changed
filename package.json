@@ -1,9 +1,10 @@
 
 {
-  "name": "react-native-biometrics-detection",
+  "name": "react-native-biometrics-changed",
   "version": "1.0.0",
-  "description": "",
+  "description": "Package for react native biometrics changed",
   "main": "index.js",
+  "homepage": "https://github.com/mergograiqevci/react-native-biometrics-changed",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -13,6 +14,6 @@
   "author": "",
   "license": "",
   "peerDependencies": {
-    "react-native": "^0.41.2"
+    "react-native": "*"
   }
 }
