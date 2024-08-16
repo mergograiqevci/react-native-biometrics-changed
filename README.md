@@ -1,4 +1,4 @@
-# react-native-biometrics-detection
+# react-native-biometrics-changed
 
 ## Getting started
 
