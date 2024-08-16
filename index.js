@@ -1,6 +1,6 @@
 
 import { NativeModules } from 'react-native';
 
-const { RNBiometricsDetection } = NativeModules;
+const { AwesomeLibrary } = NativeModules;
 
-export default RNBiometricsDetection;
+export default AwesomeLibrary;
